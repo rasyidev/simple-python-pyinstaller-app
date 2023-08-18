@@ -15,4 +15,7 @@ node {
             junit 'test-reports/results.xml'
         }
     }
+    stage('Deploy') {
+        input message: 'Sudah selesai menggunakan Python App? (Klik "Proceed" untuk mengakhiri)'
+    }
 }
