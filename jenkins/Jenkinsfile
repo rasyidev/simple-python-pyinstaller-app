@@ -18,9 +18,10 @@ node {
     stage('Manual Approval') {
         input message: "Lanjutkan ke tahap Deploy?", ok: "Proceed"
     }
-    
+
     stage('Deploy') {
         echo "Sedang melakukan proses deployment..."
         sleep time: 60, unit: 'SECONDS'
         echo "Deployment selesai!"
+    }
 }
